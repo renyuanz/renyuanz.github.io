@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `ryz`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Renyuan`,
+      summary: `who is a developer.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `I write about javascript, GraphQL and life.`,
+    siteUrl: `https://renyuanz.github.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `renyuan814`,
     },
   },
   plugins: [
@@ -53,15 +53,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-62251910-1`,
       },
     },
     `gatsby-plugin-feed`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `Ryz`,
+        short_name: `Ryz`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
