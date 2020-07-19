@@ -1,9 +1,9 @@
 body {
-  --bg: white;
-  --textNormal: #222;
-  --textTitle: #222;
-  --textLink: blue;
-  --hr: hsla(0, 0%, 0%, 0.2);
+  --bg: #fdf8ed;
+  --textNormal: #181818;
+  --textTitle: #181818;
+  --textLink: #e64100;
+  --hr: hsla(0, 20%, 1%, 0.2);
 
   background-color: var(--bg);
 }
@@ -11,9 +11,18 @@ body {
 body.dark {
   -webkit-font-smoothing: antialiased;
 
-  --bg: darkslategray;
-  --textNormal: rgba(255, 255, 255, 0.88);
-  --textTitle: white;
-  --textLink: yellow;
+  --bg: #2e253b;
+  --textNormal: #abb2bf;
+  --textTitle: #fff;
+  --textLink: #e66633;
   --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--textTitle);
 }

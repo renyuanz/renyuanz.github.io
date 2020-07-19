@@ -1,10 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
 import { ThemeToggler } from "gatsby-plugin-dark-mode"
-import DarkModeToggle from "react-dark-mode-toggle"
-
+import Toggle from "./Toggle"
 import { rhythm, scale } from "../utils/typography"
 import "./global.css"
+import sun from "../assets/sun.png"
+import moon from "../assets/moon.png"
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`
@@ -81,10 +82,29 @@ const Layout = ({ location, title, children }) => {
               const isDarkMode = theme === "dark"
 
               return (
-                <DarkModeToggle
-                  onChange={e => toggleTheme(isDarkMode ? "light" : "dark")}
+                <Toggle
+                  icons={{
+                    checked: (
+                      <img
+                        src={moon}
+                        width="16"
+                        height="16"
+                        role="presentation"
+                        style={{ pointerEvents: "none" }}
+                      />
+                    ),
+                    unchecked: (
+                      <img
+                        src={sun}
+                        width="16"
+                        height="16"
+                        role="presentation"
+                        style={{ pointerEvents: "none" }}
+                      />
+                    ),
+                  }}
                   checked={isDarkMode}
-                  size={60}
+                  onChange={e => toggleTheme(isDarkMode ? "light" : "dark")}
                 />
               )
             }}
