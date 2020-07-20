@@ -76,10 +76,12 @@ const Layout = ({ location, title, children }) => {
           <ThemeToggler>
             {({ toggleTheme, theme }) => {
               const isDarkMode = theme === "dark"
+              if (theme == null) {
+                return null
+              }
 
               return (
                 <button
-                  className="focus:outline-none"
                   onClick={() => toggleTheme(isDarkMode ? "light" : "dark")}
                 >
                   {isDarkMode ? (
