@@ -70,7 +70,9 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      <script async defer data-website-id="597eeb51-82c7-4c04-84e6-b233e40a3558" src="https://umami.cxy.dev/umami.js"></script>
+    </Helmet>
   )
 }
 
