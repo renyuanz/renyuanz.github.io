@@ -26,13 +26,13 @@ description: ""
 
 他也提出了一个观点：I think fun is really underrated in business（我认为「乐趣」在商业中被严重低估了）。
 
-![Untitled](./Untitled%201.png)
+![Untitled](./Untitled-1.png)
 
 接下来他讲的这一段故事，看得我热泪盈眶。
 
 他回顾在 17 年前，他学习了一门很有趣的编程语言 Ruby，并把赌注押在 Ruby on Rails 框架来写 Shopify 的代码，无论是在当年还是现在，Ruby 都是一门非常小众的语言，但是它的特点就是和英语写法很像，自称是程序员最好的朋友。
 
-![Untitled](./Untitled%202.png)
+![Untitled](./Untitled-2.png)
 
 他做这个选择，是因为他从 Ruby 和 Ruby on Rails 那里获得了很多灵感和乐趣，代码写得飞起。也是它们支撑了他走过那些最艰苦难熬的日子，如果没有它们，今天的 Shopify 也不会存在。
 
@@ -74,7 +74,7 @@ description: ""
 
 这里需要介绍两个重要的 Web 指标，LCP 和 FID。
 
-![Untitled](./Untitled%203.png)
+![Untitled](./Untitled-3.png)
 
 Largest Contentful Paint (LCP) ：最大内容绘制，测量加载性能。为了提供良好的用户体验，LCP 应在页面首次开始加载后的2.5 秒内发生。
 
