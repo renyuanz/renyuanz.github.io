@@ -8,7 +8,7 @@ module.exports = {
     description: `I write about javascript, GraphQL and life.`,
     siteUrl: `https://renyuanz.github.io/`,
     social: {
-      twitter: `renyuan814`,
+      twitter: `ry_zou`,
     },
   },
   plugins: [
