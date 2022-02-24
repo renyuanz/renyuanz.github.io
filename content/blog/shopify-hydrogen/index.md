@@ -151,7 +151,7 @@ Shopify 的店铺界面是由一种基于 Ruby 的模版引擎 Liquid 进行动�
 
 ![oxygen.jpg](./oxygen.jpg)
 
-这次的开发者预览版也放出了一个体验版店铺，https://shopify.supply，来感受一下 Hydrogen 到底有多快吧！
+这次的开发者预览版也放出了一个体验版店铺，https://shopify.supply ，来感受一下 Hydrogen 到底有多快吧！
 
 ## 写在最后
 
