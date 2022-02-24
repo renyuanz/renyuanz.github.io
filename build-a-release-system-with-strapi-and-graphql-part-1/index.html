@@ -1,0 +1,612 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:var(--hr);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:var(--textLink);text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.anchor{box-shadow:none;}a.anchor svg[aria-hidden="true"]{stroke:var(--textLink);}</style><style data-href="/styles.57170181197af27bc420.css" data-identity="gatsby-global-css">@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-8d7d79679b70dbe27172b6460e7a7910.woff2) format("woff2"),url(/static/montserrat-latin-100-ec38980a9e0119a379e2a9b3dbb1901a.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e279051046ba1286706adc886cf1c96b.woff2) format("woff2"),url(/static/montserrat-latin-100italic-3b325a3173c8207435cd1b76e19bf501.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-9d266fbbfa6cab7009bd56003b1eeb67.woff2) format("woff2"),url(/static/montserrat-latin-200-2d8ba08717110d27122e54c34b8a5798.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-6e5b3756583bb2263eb062eae992735e.woff2) format("woff2"),url(/static/montserrat-latin-200italic-a0d6f343e4b536c582926255367a57da.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-00b3e893aab5a8fd632d6342eb72551a.woff2) format("woff2"),url(/static/montserrat-latin-300-ea303695ceab35f17e7d062f30e0173b.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-56f34ea368f6aedf89583d444bbcb227.woff2) format("woff2"),url(/static/montserrat-latin-300italic-54b0bf2c8c4c12ffafd803be2466a790.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-b71748ae4f80ec8c014def4c5fa8688b.woff2) format("woff2"),url(/static/montserrat-latin-400-0659a9f4e90db5cf51b50d005bff1e41.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-6eed6b4cbb809c6efc7aa7ddad6dbe3e.woff2) format("woff2"),url(/static/montserrat-latin-400italic-7583622cfde30ae49086d18447ab28e7.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-091b209546e16313fd4f4fc36090c757.woff2) format("woff2"),url(/static/montserrat-latin-500-edd311588712a96bbf435fad264fff62.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-c90ced68b46050061d1a41842d6dfb43.woff2) format("woff2"),url(/static/montserrat-latin-500italic-5146cbfe02b1deea5dffea27a5f2f998.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-0480d2f8a71f38db8633b84d8722e0c2.woff2) format("woff2"),url(/static/montserrat-latin-600-b77863a375260a05dd13f86a1cee598f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-cf46ffb11f3a60d7df0567f8851a1d00.woff2) format("woff2"),url(/static/montserrat-latin-600italic-c4fcfeeb057724724097167e57bd7801.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-7dbcc8a5ea2289d83f657c25b4be6193.woff2) format("woff2"),url(/static/montserrat-latin-700-99271a835e1cae8c76ef8bba99a8cc4e.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-c41ad6bdb4bd504a843d546d0a47958d.woff2) format("woff2"),url(/static/montserrat-latin-700italic-6779372f04095051c62ed36bc1dcc142.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-db9a3e0ba7eaea32e5f55328ace6cf23.woff2) format("woff2"),url(/static/montserrat-latin-800-4e3c615967a2360f5db87d2f0fd2456f.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-bf45bfa14805969eda318973947bc42b.woff2) format("woff2"),url(/static/montserrat-latin-800italic-fe82abb0bcede51bf724254878e0c374.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:normal;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2) format("woff2"),url(/static/montserrat-latin-900-8211f418baeb8ec880b80ba3c682f957.woff) format("woff")}@font-face{font-display:swap;font-family:Montserrat;font-style:italic;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2) format("woff2"),url(/static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-fc117160c69a8ea0851b26dd14748ee4.woff2) format("woff2"),url(/static/merriweather-latin-300-58b18067ebbd21fda77b67e73c241d3b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-fe29961474f8dbf77c0aa7b9a629e4bc.woff2) format("woff2"),url(/static/merriweather-latin-300italic-23c3f1f88683618a4fb8d265d33d383a.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-d9479e8023bef9cbd9bf8d6eabd6bf36.woff2) format("woff2"),url(/static/merriweather-latin-400-040426f99ff6e00b86506452e0d1f10b.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-2de7bfeaf08fb03d4315d49947f062f7.woff2) format("woff2"),url(/static/merriweather-latin-400italic-79db67aca65f5285964ab332bd65f451.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-4b08e01d805fa35d7bf777f1b24314ae.woff2) format("woff2"),url(/static/merriweather-latin-700-22fb8afba4ab1f093b6ef9e28a9b6e92.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-cd92541b177652fffb6e3b952f1c33f1.woff2) format("woff2"),url(/static/merriweather-latin-700italic-f87f3d87cea0dd0979bfc8ac9ea90243.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:normal;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-f813fc6a4bee46eda5224ac7ebf1b7be.woff2) format("woff2"),url(/static/merriweather-latin-900-5d4e42cb44410674acd99153d57df032.woff) format("woff")}@font-face{font-display:swap;font-family:Merriweather;font-style:italic;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-b7901d85486871c1779c0e93ddd85656.woff2) format("woff2"),url(/static/merriweather-latin-900italic-9647f9fdab98756989a8a5550eb205c3.woff) format("woff")}code[class*=language-],pre[class*=language-]{word-wrap:normal;background:none;color:#000;font-family:Consolas,Monaco,Andale Mono,Ubuntu Mono,monospace;font-size:1em;-webkit-hyphens:none;-ms-hyphens:none;hyphens:none;line-height:1.5;-moz-tab-size:4;-o-tab-size:4;tab-size:4;text-align:left;text-shadow:0 1px #fff;white-space:pre;word-break:normal;word-spacing:normal}code[class*=language-]::selection,code[class*=language-] ::selection,pre[class*=language-]::selection,pre[class*=language-] ::selection{background:#b3d4fc;text-shadow:none}@media print{code[class*=language-],pre[class*=language-]{text-shadow:none}}pre[class*=language-]{margin:.5em 0;overflow:auto;padding:1em}:not(pre)>code[class*=language-],pre[class*=language-]{background:#f5f2f0}:not(pre)>code[class*=language-]{border-radius:.3em;padding:.1em;white-space:normal}.token.cdata,.token.comment,.token.doctype,.token.prolog{color:#708090}.token.punctuation{color:#999}.token.namespace{opacity:.7}.token.boolean,.token.constant,.token.deleted,.token.number,.token.property,.token.symbol,.token.tag{color:#905}.token.attr-name,.token.builtin,.token.char,.token.inserted,.token.selector,.token.string{color:#690}.language-css .token.string,.style .token.string,.token.entity,.token.operator,.token.url{background:hsla(0,0%,100%,.5);color:#9a6e3a}.token.atrule,.token.attr-value,.token.keyword{color:#07a}.token.class-name,.token.function{color:#dd4a68}.token.important,.token.regex,.token.variable{color:#e90}.token.bold,.token.important{font-weight:700}.token.italic{font-style:italic}.token.entity{cursor:help}body{--bg:#fdf8ed;--textNormal:#181818;--textTitle:#181818;--textLink:#e64100;--hr:rgba(3,2,2,0.2);background-color:var(--bg)}body.dark{-webkit-font-smoothing:antialiased;--bg:#2e253b;--textNormal:#abb2bf;--textTitle:#fff;--textLink:#e66633;--hr:hsla(0,0%,100%,0.2)}blockquote,h1,h2,h3,h4,h5,h6{color:var(--textTitle)}button{-webkit-font-smoothing:inherit;-moz-osx-font-smoothing:inherit;-webkit-appearance:none;background:transparent;border:none;color:inherit;cursor:pointer;font:inherit;line-height:normal;margin:0;outline:0;overflow:visible;padding:0;width:auto}</style><meta name="generator" content="Gatsby 3.8.1"/><link rel="preconnect" href="https://www.google-analytics.com"/><link rel="dns-prefetch" href="https://www.google-analytics.com"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">使用 Strapi 和 GraphQL 快速搭建公司发布变更系统 —— Part.1 Strapi | ryz</title><meta data-react-helmet="true" name="description" content="软件开发的工作中不可避免的会遇到突发的生产环境事故，尤其是微服务架构下的今天，当一场事故发生后，如何快速定位到问题根源就极为重要。为了解决这个问题，我用 Strapi 构建了一套 GraphQL API，配合上 React.js，Typescript 和 GraphQL codegen 来快速构建一个发布变更系统 (release log system)。"/><meta data-react-helmet="true" property="og:title" content="使用 Strapi 和 GraphQL 快速搭建公司发布变更系统 —— Part.1 Strapi"/><meta data-react-helmet="true" property="og:description" content="软件开发的工作中不可避免的会遇到突发的生产环境事故，尤其是微服务架构下的今天，当一场事故发生后，如何快速定位到问题根源就极为重要。为了解决这个问题，我用 Strapi 构建了一套 GraphQL API，配合上 React.js，Typescript 和 GraphQL codegen 来快速构建一个发布变更系统 (release log system)。"/><meta data-react-helmet="true" property="og:type" content="website"/><meta data-react-helmet="true" name="twitter:card" content="summary"/><meta data-react-helmet="true" name="twitter:creator" content="ry_zou"/><meta data-react-helmet="true" name="twitter:title" content="使用 Strapi 和 GraphQL 快速搭建公司发布变更系统 —— Part.1 Strapi"/><meta data-react-helmet="true" name="twitter:description" content="软件开发的工作中不可避免的会遇到突发的生产环境事故，尤其是微服务架构下的今天，当一场事故发生后，如何快速定位到问题根源就极为重要。为了解决这个问题，我用 Strapi 构建了一套 GraphQL API，配合上 React.js，Typescript 和 GraphQL codegen 来快速构建一个发布变更系统 (release log system)。"/><script data-react-helmet="true" async="" defer="" data-website-id="597eeb51-82c7-4c04-84e6-b233e40a3558" src="https://umami.cxy.dev/umami.js"></script><link as="script" rel="preload" href="/webpack-runtime-5be1ea5d33c995e82571.js"/><link as="script" rel="preload" href="/framework-576a35283827f43a776d.js"/><link as="script" rel="preload" href="/app-1fc3f10b0540ead08994.js"/><link as="script" rel="preload" href="/commons-afc5141f5e3bb79125a1.js"/><link as="script" rel="preload" href="/fab8c9364b01cebfd3503fc18011994750f493ff-a873b42b1724b534983b.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-js-192916fa5b4b2dea4922.js"/><link as="fetch" rel="preload" href="/page-data/build-a-release-system-with-strapi-and-graphql-part-1/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/1246554614.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2841359383.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><script>
+void function() {
+  window.__onThemeChange = function() {}
+
+  var preferredTheme
+  try {
+    preferredTheme = localStorage.getItem('theme')
+  } catch (err) { }
+
+  function setTheme(newTheme) {
+    if (preferredTheme && document.body.classList.contains(preferredTheme)) {
+      document.body.classList.replace(preferredTheme, newTheme)
+    } else {
+      document.body.classList.add(newTheme)
+    }
+
+    window.__theme = newTheme
+    preferredTheme = newTheme
+    window.__onThemeChange(newTheme)
+  }
+
+  window.__setPreferredTheme = function(newTheme) {
+    setTheme(newTheme)
+    try {
+      localStorage.setItem('theme', newTheme)
+    } catch (err) {}
+  }
+
+  var darkQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  darkQuery.addListener(function(e) {
+    window.__setPreferredTheme(e.matches ? 'dark' : 'light')
+  })
+
+  setTheme(preferredTheme || (darkQuery.matches ? 'dark' : 'light'))
+}()
+    </script><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div style="background-color:var(--bg);color:var(--textNormal)"><div style="margin-left:auto;margin-right:auto;max-width:42rem;padding:2.625rem 1.3125rem"><header style="display:flex;justify-content:space-between;align-items:center;margin-bottom:2.625rem"><h3 style="font-family:Montserrat, sans-serif;margin-top:0;margin-bottom:0"><a style="box-shadow:none;color:inherit" href="/">ryz</a></h3></header><main><article><header><h1 style="margin-top:1.75rem;margin-bottom:0">使用 Strapi 和 GraphQL 快速搭建公司发布变更系统 —— Part.1 Strapi</h1><p style="font-size:0.83255rem;line-height:1.75rem;display:block;margin-bottom:1.75rem">May 23, 2020</p></header><section><p>软件开发的工作中不可避免的会遇到突发的生产环境事故，尤其是微服务架构下的今天，当一场事故发生后，如何快速定位到问题根源就极为重要。</p>
+<p>于是一个想法顺势而生：在 Jenkins（或其他 CI/CD 系统）中自动记录所有项目的发布变更和变更详细内容，并能按时间、按项目、按团队进行筛选。</p>
+<p>做个网站对于程序员来说并没有什么难度，但是平时工作那么多，如何<strong>快速</strong>实现这个想法就变得尤其重要。</p>
+<p><strong>于是就有了今天要分享的内容</strong></p>
+<blockquote>
+<p>使用 Strapi 构建 GraphQL API，配合上 React.js，Typescript 和 GraphQL codegen 来快速构建一个发布变更系统。</p>
+</blockquote>
+<h2>Strapi</h2>
+<p>这里着重介绍一下 Strapi，（官网地址：<a href="https://strapi.io">https://strapi.io</a> ）是一个开源的 Node.js Headless CMS，可以通过 UI 界面去定义模型关系来自动生成数据库、RESTful API、GraphQL API 和 swagger API 文档。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/e96e52a24a217a21b67c43f139bc633c/a2510/1590217476809.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAUCAwb/xAAWAQEBAQAAAAAAAAAAAAAAAAADAAH/2gAMAwEAAhADEAAAAV1rJo+Z0mLf/8QAGxAAAgIDAQAAAAAAAAAAAAAAAAIBAwQREjP/2gAIAQEAAQUCWNkHezCqR6YrRTL9/wD/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAYEQEBAAMAAAAAAAAAAAAAAAABAAMRIf/aAAgBAgEBPwFyaYeX/8QAGhAAAgMBAQAAAAAAAAAAAAAAAAECETEQIv/aAAgBAQAGPwLGy85copuzzFIZ/8QAGxABAAICAwAAAAAAAAAAAAAAAQARIUFxobH/2gAIAQEAAT8hqdSBRAA1LZLGlvS0mf4Ynjn/2gAMAwEAAgADAAAAEG//AP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPxCRr//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEf/aAAgBAgEBPxAGMtg3/8QAHBABAQADAAMBAAAAAAAAAAAAAREAITFBUXHR/9oACAEBAAE/ECgoWfnmUXRstA8TJdp98wPokayGs2BZKJhCYGuPhn//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi.io website"
+        title="Strapi.io website"
+        src="/static/e96e52a24a217a21b67c43f139bc633c/1c72d/1590217476809.jpg"
+        srcset="/static/e96e52a24a217a21b67c43f139bc633c/a80bd/1590217476809.jpg 148w,
+/static/e96e52a24a217a21b67c43f139bc633c/1c91a/1590217476809.jpg 295w,
+/static/e96e52a24a217a21b67c43f139bc633c/1c72d/1590217476809.jpg 590w,
+/static/e96e52a24a217a21b67c43f139bc633c/a8a14/1590217476809.jpg 885w,
+/static/e96e52a24a217a21b67c43f139bc633c/a2510/1590217476809.jpg 1000w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>近几年 headless CMS 的概念很火，其实 headless 字面意思是“无头的”，这里理解为不提供前端界面的 CMS 系统，只提供 API 接口。多样化的客户端撼动了传统 CMS（如 WordPress）的地位，APP、小程序、H5 的爆发，加速了前后端技术的相互独立。</p>
+<p>提到 Headless CMS，还有一个不错的选项是 contentful，可以理解为上了云的 Strapi。而另一个有着相似概念的（通过 schema 生成 API）由 IBM 开源的 node.js API 框架 loopback，都是不错的可选性。</p>
+<p>为什么偏偏选了 Strapi？以下是 Strapi 与 contentful，loopback 的对比。</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Strapi</th>
+<th>contenful</th>
+<th>loopback</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self-hosted</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+<tr>
+<td>可视化管理界面</td>
+<td>✅</td>
+<td>✅</td>
+<td>❌</td>
+</tr>
+<tr>
+<td>定制能力强的插件系统</td>
+<td>✅</td>
+<td>❌</td>
+<td>✅</td>
+</tr>
+</tbody>
+</table>
+<p>在前后端分离的大环境下，Strapi 可以让（前端）工程师快速完成一套「功能完整」且「性能强大」的 API，并可以部署在自己的服务器上，使得这个方案脱颖而出。也是半个小时完成 API 接口的必要条件。</p>
+<h2>安装 Strapi cli</h2>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token function">yarn</span> create strapi-app my-project --quickstart</code></pre></div>
+<h2>画模型关系图</h2>
+<p>在等待安装的过程中，我们可以先构思一下将要构建的系统模型关系。</p>
+<p>以我做的版本发布记录系统为例，这个系统主要用来记录版本发布，版本发布中我需要知道它属于那个项目以及发布的版本号、发布时间、发布内容（release note）等信息。</p>
+<p>简单画个图，将就看一下。</p>
+<p>￼￼<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/faa10059c60dad3057c29b987fd418bb/8efc2/release_system_prototype.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 116.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAIAAACEf/j0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAC0klEQVQ4y52TzXKjOBSFef9lv5DjxbhSnRR27LSNCYQQQAIkhP4ljA1ToNiVdE96Md+CkqAO996jIw8AQAhBCMEZMAM/UZZlVVVJHKO6llIqpTjnCKEsyzwI4fg9wzCM42iMSX/+ZAgdw9D3/f1+XxQFhNDLsqyu62qmvOIKfuYtjgEASZKEYZimaZ7nAAAPAGCMUUoxxqSUWmsppTGGMaa1Nle608laezqd+r7vZgghHkJIKXV/f79cLl9eXsIwDIJgtVrtdtvz+fyXiSilHsaYEJKmaVEUdV0DABBC71nmrzdKqdvYf4IxnsSccyG4mpjadn4eDoHW+i/iqqo8hPDlcpFSGd0xxtorUkp6xb1hM0IIY8w4jpPbhBApZJwGkMQNwYIL9wtKqRDiJmCMNTNCCIyx1rosS69tW63182FziJ6kFEVRAACstXVdv76+lmVJKU3TFCF0G4FzLqX8EFtrgyDYbZ8hhO4Yq6qK4zgMwzzPkyR5enqKoogQ4oqXZXk6naa227YdhmG4DOf+opSy1jjPjDHWWqWU1rrrOmOMS4E79mEYJjHjzBiTZMc3cMQNIuTDm7ZtCSHOMIwxQshttdZu5sltIbgx9h28Ullzzqy1jE/ecM5dzgghfd9/jrrry4mFtfYYhMdjuFwufd/fbreLxeLh4eHx8XGxWNzd3e33e4RQVVWEEM45hNBaO4kppf95k35bXL4yjuPktjvG58M2So5FXhRFnuf5+0yWZbdFnk/f3E2MokhKOcWTMcooy2B8HvU4jN9k8UtTTdO42H2EZL3e7Hb7MnspH34kcfTParX/NbFerzebje/7cRxba6WUXddVVeUyN12Mvu8xxrAsW4IJfIOwdHcdAOBadVsy07Zt0zR9309il7v/QdM0U2XxCX7llpOmaeaSjVu72HDO6rr2hmHov+F8PiutESYNoS3llHJCKGlZMz+t7f4FJGQISjy9dBgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="excalidraw Release system prototype"
+        title="excalidraw Release system prototype"
+        src="/static/faa10059c60dad3057c29b987fd418bb/fcda8/release_system_prototype.png"
+        srcset="/static/faa10059c60dad3057c29b987fd418bb/12f09/release_system_prototype.png 148w,
+/static/faa10059c60dad3057c29b987fd418bb/e4a3f/release_system_prototype.png 295w,
+/static/faa10059c60dad3057c29b987fd418bb/fcda8/release_system_prototype.png 590w,
+/static/faa10059c60dad3057c29b987fd418bb/8efc2/release_system_prototype.png 828w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>于是模型关系便不难做出来：</p>
+<p>￼￼￼<span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 508px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b1a6cfde005d5373593a60fd4fd1f6a6/2fd48/1_to_n_relation.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 178.3783783783784%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAYAAACJ8xqgAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD80lEQVRIx52WV0/sSBCF/c/5Azwg8QYiPABCAiEeyIicc845h8nJnmGAs/rqqkfGd2aW3ZZKdtvt6lNVp07bk6REIqG7uzvlcjm9vb3p9fVVLy8venp60vn5uW5vb82+v79Vb/De46anp0cNDQ3q7e1VZ2enxsfH1d3drYWFBa2urmpgYEDDw8O24cfHh0ql0g8rFosKgsCceul0WhMTE+a0vb1dra2tamtrU3Nzs7q6ujQ6OmrXlpYWXV9f6/LyUldXV3Z/c3NjRnSnp6dKJpPyYrHYv4bymwHC5+dneXhNpVKanZ3V1NSUdnd3bUG5XNbn56e+vr4q924OgLAxCJ28G0I+YDw+Phr83wznKOyQYnpUuFAoaGdnRzMzM9rf39fe3p7W1tYsX6Df3NzU+vq6PVtZWTGkzplzSLEA58XjcYv/4uJC29vb9vHR0ZE2NjZ0fHxsBTg8PDTkzBcXFysVrerw/f29Un54xwsMFNCERDPy+XzFUa2Q4bDlkMUUpK+vT4ODg0YVrtAFLoJwZGTEqMGgMFGEOLQq4xVE4YXh4SrsRnSNcwi5idAcgpCO6O/vty5ZWlqyAoFybm7O8ke3uPCr0abikFIzIXTYTxFwQIXPzs5sEY5OTk50f3//A1V4wBTj4cPDg3zf/3VHOGJzdcaAXhTYqgyScH+CkN0gOldnREOK+AZjTgSAOjg4ELrgVesAdnUdMz8/bx8zKE44b9FvTL6qJZgi0RHwbmxszEgfzV30Gze8MEGji0g0wlqrutXMq9X0jnuoEaStVd3o8GopiLsHHSmIPq/rsBp0RwdCpqer9e9/cuhChkqQvl4h/ipKvQXwEtkK93stqxQFBPTy8vKy6SEkRRsJl75GdFGcXxWFRUNDQ2pqajKJ4hhtbGxUR0eHtra2zOhrRAL5cscERm/TJTyjY7LZrDxQgIrDCQJzFKCBzDGQghgFp/1QeCJyxpw+5h2p8ehh1IYiuEP8/wy+4y/DAy6G/nGUooGcG47cLtmuj5lHj1PXVYiMR+yu+cO7RSUr3D3RfmYggeaQTgAh6PglmZ6eNkFAHJhzvpBD1rFmcnLSVJ1jNbxZxSEI0TXODnLpQkJpuKeSvGdTOobqUgRCDHfND4eIJh1BlagmycU5sg9tHKmrCclfOWRnHGYyGQsJh6BgAxaA5k8BpO86fRwUi38cOnSQEqnCMVKO+X5B6XTKNnQ/oGzmfkDDv3NEYw7ZkfiBzBUjf7FEUql0RrF4UkFQVCqTVTKVVjaXUzyRVDqTVSKZ0tPLm95jccXiCUuTV4uo+YKvTC6vdDanoFhSwQ/MSqUP5fIF5fK+zVnnB0Xl/UDl8qf+AYhJn93Qyo8/AAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="excalidraw Model relation"
+        title="excalidraw Model relation"
+        src="/static/b1a6cfde005d5373593a60fd4fd1f6a6/2fd48/1_to_n_relation.png"
+        srcset="/static/b1a6cfde005d5373593a60fd4fd1f6a6/12f09/1_to_n_relation.png 148w,
+/static/b1a6cfde005d5373593a60fd4fd1f6a6/e4a3f/1_to_n_relation.png 295w,
+/static/b1a6cfde005d5373593a60fd4fd1f6a6/2fd48/1_to_n_relation.png 508w"
+        sizes="(max-width: 508px) 100vw, 508px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>虽然最终的系统比这个模型图要复杂很多，但是用于教程已经足够了。</p>
+<p>（画图工具是一个开源的免费的网站：<a href="https://excalidraw.com/">https://excalidraw.com/</a> 用的是端到端加密，非常安全，同时也支持多人协同编辑哦~）</p>
+<h2>创建 Content type</h2>
+<p>有了这个模型关系，你就可以开始用 Strapi 搭建 schema 了。Strapi 目前支持 mongodb，sqlite，mysql 和 postgresql。本地开发默认使用 sqlite，所以也不用安装其他的数据库依赖。</p>
+<p>安装好 Strapi 项目后，进入项目根目录，执行 yarn start，服务器默认端口是 1337，打开浏览器访问 <a href="http://localhost:1337/admin">http://localhost:1337/admin</a> 并创建一个管理员用户。进入后台后直接开始创建 content type。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/69128/123.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 56.75675675675676%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAYBBAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAC/9oADAMBAAIQAxAAAAHNZlVoRtkBX//EABoQAAICAwAAAAAAAAAAAAAAAAABAhMDBDT/2gAIAQEAAQUCsmYG6Bmvzn//xAAWEQEBAQAAAAAAAAAAAAAAAAABEDH/2gAIAQMBAT8BAMn/xAAXEQEAAwAAAAAAAAAAAAAAAAABAhAx/9oACAECAQE/AWS7X//EABgQAAIDAAAAAAAAAAAAAAAAABBxAAID/9oACAEBAAY/ApRHND//xAAaEAEBAAIDAAAAAAAAAAAAAAABABExUYGh/9oACAEBAAE/IcBvycvJstpA6MX/2gAMAwEAAgADAAAAENwP/8QAFxEAAwEAAAAAAAAAAAAAAAAAARARIf/aAAgBAwEBPxA5iL//xAAXEQADAQAAAAAAAAAAAAAAAAABEBEh/9oACAECAQE/EBGqv//EABsQAQACAgMAAAAAAAAAAAAAAAEAERAhMVGR/9oACAEBAAE/ELg0HnWMotUuJNNvscjd9zBRRP/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi New content type"
+        title="Strapi New content type"
+        src="/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/1c72d/123.jpg"
+        srcset="/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/a80bd/123.jpg 148w,
+/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/1c91a/123.jpg 295w,
+/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/1c72d/123.jpg 590w,
+/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/a8a14/123.jpg 885w,
+/static/7da37a5ac0e8d9de4a80f3de9dadd4d4/69128/123.jpg 1036w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>现在开始定义 releaselog 的字段。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/cf9925044760aeab12e2b6ca5ef45530/0e355/1590076404751.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 62.16216216216216%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAdywSD//xAAXEAADAQAAAAAAAAAAAAAAAAAAARBB/9oACAEBAAEFAlUaf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABcQAAMBAAAAAAAAAAAAAAAAAAAQQTH/2gAIAQEAAT8hFWCl/9oADAMBAAIAAwAAABCDz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQABBAMAAAAAAAAAAAAAAAERABAhMUFhsf/aAAgBAQABPxAKb5qWZhjq2Ao8Lf/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi releaselog content type"
+        title="Strapi releaselog content type"
+        src="/static/cf9925044760aeab12e2b6ca5ef45530/1c72d/1590076404751.jpg"
+        srcset="/static/cf9925044760aeab12e2b6ca5ef45530/a80bd/1590076404751.jpg 148w,
+/static/cf9925044760aeab12e2b6ca5ef45530/1c91a/1590076404751.jpg 295w,
+/static/cf9925044760aeab12e2b6ca5ef45530/1c72d/1590076404751.jpg 590w,
+/static/cf9925044760aeab12e2b6ca5ef45530/a8a14/1590076404751.jpg 885w,
+/static/cf9925044760aeab12e2b6ca5ef45530/fbd2c/1590076404751.jpg 1180w,
+/static/cf9925044760aeab12e2b6ca5ef45530/0e355/1590076404751.jpg 1798w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>这里要着重介绍一下「引用」类型的字段，也就是 releaselog 里面的 <code class="language-text">approved_by</code> (表示发布 releaselog 的负责人)，用来对应 Strapi 原生集成的 User 类型。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/94a58c3b52d00ff029d54e0cf02d2d58/5fe1b/1590077020351.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGQAAAgMBAAAAAAAAAAAAAAAAAAMBAgQF/8QAFgEBAQEAAAAAAAAAAAAAAAAAAQID/9oADAMBAAIQAxAAAAHuzVQPMRpP/8QAGBAAAgMAAAAAAAAAAAAAAAAAAAIBIDH/2gAIAQEAAQUCij4p/8QAFREBAQAAAAAAAAAAAAAAAAAAABL/2gAIAQMBAT8BU//EABcRAQADAAAAAAAAAAAAAAAAAAABEiH/2gAIAQIBAT8BnFX/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAgMAAAAAAAAAAAAAAAAAATFxEBFh/9oACAEBAAE/IRsT6sRWQdn/2gAMAwEAAgADAAAAENzP/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARQf/aAAgBAwEBPxBY1y//xAAXEQADAQAAAAAAAAAAAAAAAAAAAREx/9oACAECAQE/EGijl6f/xAAfEAACAQIHAAAAAAAAAAAAAAABEQAQITFBUWFxwfD/2gAIAQEAAT8QsYSGV4Q0XMAuyDCezamf/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi approved_by field definition"
+        title="Strapi approved_by field definition"
+        src="/static/94a58c3b52d00ff029d54e0cf02d2d58/1c72d/1590077020351.jpg"
+        srcset="/static/94a58c3b52d00ff029d54e0cf02d2d58/a80bd/1590077020351.jpg 148w,
+/static/94a58c3b52d00ff029d54e0cf02d2d58/1c91a/1590077020351.jpg 295w,
+/static/94a58c3b52d00ff029d54e0cf02d2d58/1c72d/1590077020351.jpg 590w,
+/static/94a58c3b52d00ff029d54e0cf02d2d58/a8a14/1590077020351.jpg 885w,
+/static/94a58c3b52d00ff029d54e0cf02d2d58/fbd2c/1590077020351.jpg 1180w,
+/static/94a58c3b52d00ff029d54e0cf02d2d58/5fe1b/1590077020351.jpg 1796w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>然后在完成所有的字段定义后，就可以点击右上角的保存了。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/257be69bac0b841f710d33ae5c9e4250/7e1b6/1590077345813.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 66.21621621621621%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHuoSND/8QAFxABAQEBAAAAAAAAAAAAAAAAAQACIP/aAAgBAQABBQImM8f/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGRABAQEBAQEAAAAAAAAAAAAAAQARgSEx/9oACAEBAAE/IQQUQzsQehy+Wu23/9oADAMBAAIAAwAAABDf3//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAwEBPxCpj//EABYRAQEBAAAAAAAAAAAAAAAAAAARUf/aAAgBAgEBPxCIx//EABsQAQADAQADAAAAAAAAAAAAAAEAESFBMZGx/9oACAEBAAE/EBLRWxkQpwspbW+EPsLuj5b2GzPUFP/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi releaselog fields"
+        title="Strapi releaselog fields"
+        src="/static/257be69bac0b841f710d33ae5c9e4250/1c72d/1590077345813.jpg"
+        srcset="/static/257be69bac0b841f710d33ae5c9e4250/a80bd/1590077345813.jpg 148w,
+/static/257be69bac0b841f710d33ae5c9e4250/1c91a/1590077345813.jpg 295w,
+/static/257be69bac0b841f710d33ae5c9e4250/1c72d/1590077345813.jpg 590w,
+/static/257be69bac0b841f710d33ae5c9e4250/a8a14/1590077345813.jpg 885w,
+/static/257be69bac0b841f710d33ae5c9e4250/fbd2c/1590077345813.jpg 1180w,
+/static/257be69bac0b841f710d33ae5c9e4250/7e1b6/1590077345813.jpg 1310w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>每次保存 content type 的时候，Strapi 会自动重启，并在项目中生成对于的 model，controller 文件，创建或更新数据库表结构。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/04aefb827c81d458620d82ed5e57044a/e1596/1590077696434.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAEDAgX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB7WWiRQj/xAAZEAADAQEBAAAAAAAAAAAAAAAAARECEBL/2gAIAQEAAQUCnNN30i5Lk//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABYQAQEBAAAAAAAAAAAAAAAAABAxAP/aAAgBAQAGPwJup//EAB4QAAICAAcAAAAAAAAAAAAAAAABESEQMUFRgZHh/9oACAEBAAE/IeEDrIUo9MNN4Huro//aAAwDAQACAAMAAAAQ4C//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QRsb/xAAeEAEAAgIBBQAAAAAAAAAAAAABABEh0YExQXGR4f/aAAgBAQABPxA6rOCErQOIaKjLAQXs9Oo/dalnLeVqf//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi auto generated files"
+        title="Strapi auto generated files"
+        src="/static/04aefb827c81d458620d82ed5e57044a/1c72d/1590077696434.jpg"
+        srcset="/static/04aefb827c81d458620d82ed5e57044a/a80bd/1590077696434.jpg 148w,
+/static/04aefb827c81d458620d82ed5e57044a/1c91a/1590077696434.jpg 295w,
+/static/04aefb827c81d458620d82ed5e57044a/1c72d/1590077696434.jpg 590w,
+/static/04aefb827c81d458620d82ed5e57044a/a8a14/1590077696434.jpg 885w,
+/static/04aefb827c81d458620d82ed5e57044a/fbd2c/1590077696434.jpg 1180w,
+/static/04aefb827c81d458620d82ed5e57044a/e1596/1590077696434.jpg 2048w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>接着完成 project 的字段定义，这里要加上对 releaselog 的「引用」类型。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/3e8786a8ec45dac96575fedfca270f48/5fe1b/1590077909226.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 45.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAd4ioHlE0n//xAAYEAACAwAAAAAAAAAAAAAAAAAAAQIgMf/aAAgBAQABBQKk8R//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEv/aAAgBAwEBPwFT/8QAFxEBAAMAAAAAAAAAAAAAAAAAAAESIf/aAAgBAgEBPwGcUf/EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABsQAAICAwEAAAAAAAAAAAAAAAABMXEQESFh/9oACAEBAAE/IVw2J+rEdkXZ/9oADAMBAAIAAwAAABBc7//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEWH/2gAIAQMBAT8QXI5v/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAERYf/aAAgBAgEBPxBoo9H/xAAbEAACAgMBAAAAAAAAAAAAAAABEQAxECFxQf/aAAgBAQABPxAR4ERUuwC2zsFZiP/Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi releaselog project relation"
+        title="Strapi releaselog project relation"
+        src="/static/3e8786a8ec45dac96575fedfca270f48/1c72d/1590077909226.jpg"
+        srcset="/static/3e8786a8ec45dac96575fedfca270f48/a80bd/1590077909226.jpg 148w,
+/static/3e8786a8ec45dac96575fedfca270f48/1c91a/1590077909226.jpg 295w,
+/static/3e8786a8ec45dac96575fedfca270f48/1c72d/1590077909226.jpg 590w,
+/static/3e8786a8ec45dac96575fedfca270f48/a8a14/1590077909226.jpg 885w,
+/static/3e8786a8ec45dac96575fedfca270f48/fbd2c/1590077909226.jpg 1180w,
+/static/3e8786a8ec45dac96575fedfca270f48/5fe1b/1590077909226.jpg 1796w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>这是定义好的 project 类型。点击保存。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2e33b1cd867b99e19664a283daa08aa2/95e20/1590078117646.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAAMAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEA/9oADAMBAAIQAxAAAAHeUISL/8QAFxAAAwEAAAAAAAAAAAAAAAAAAQIQIP/aAAgBAQABBQKBcf/EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAECAQE/AUf/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAYEAEBAQEBAAAAAAAAAAAAAAABACExEf/aAAgBAQABPyE5JmQBu3DIW9v/2gAMAwEAAgADAAAAEGfP/8QAFhEBAQEAAAAAAAAAAAAAAAAAABEh/9oACAEDAQE/EKx//8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EJGH/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARITFhUcH/2gAIAQEAAT8QJCOQHpcpFVewT7HRgclirZb2f//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi project content type"
+        title="Strapi project content type"
+        src="/static/2e33b1cd867b99e19664a283daa08aa2/1c72d/1590078117646.jpg"
+        srcset="/static/2e33b1cd867b99e19664a283daa08aa2/a80bd/1590078117646.jpg 148w,
+/static/2e33b1cd867b99e19664a283daa08aa2/1c91a/1590078117646.jpg 295w,
+/static/2e33b1cd867b99e19664a283daa08aa2/1c72d/1590078117646.jpg 590w,
+/static/2e33b1cd867b99e19664a283daa08aa2/a8a14/1590078117646.jpg 885w,
+/static/2e33b1cd867b99e19664a283daa08aa2/fbd2c/1590078117646.jpg 1180w,
+/static/2e33b1cd867b99e19664a283daa08aa2/95e20/1590078117646.jpg 1644w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>然后我们接着创建几个用来测试的数据。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/b836ac03cdbf65a8e46980b04a37049f/ee0d2/1590078824322.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 42.567567567567565%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAJABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAIF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/2gAMAwEAAhADEAAAAd4EqJ//xAAXEAADAQAAAAAAAAAAAAAAAAABEBIg/9oACAEBAAEFAlIx/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAECAx/9oACAEBAAY/AhE//8QAGBAAAgMAAAAAAAAAAAAAAAAAEBEgYZH/2gAIAQEAAT8hQoZD/9oADAMBAAIAAwAAABCT/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8QZH//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8QbX//xAAcEAACAgIDAAAAAAAAAAAAAAABIQAREDFBUcH/2gAIAQEAAT8QFKAKjT56ht8UGs//2Q=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi test data"
+        title="Strapi test data"
+        src="/static/b836ac03cdbf65a8e46980b04a37049f/1c72d/1590078824322.jpg"
+        srcset="/static/b836ac03cdbf65a8e46980b04a37049f/a80bd/1590078824322.jpg 148w,
+/static/b836ac03cdbf65a8e46980b04a37049f/1c91a/1590078824322.jpg 295w,
+/static/b836ac03cdbf65a8e46980b04a37049f/1c72d/1590078824322.jpg 590w,
+/static/b836ac03cdbf65a8e46980b04a37049f/a8a14/1590078824322.jpg 885w,
+/static/b836ac03cdbf65a8e46980b04a37049f/fbd2c/1590078824322.jpg 1180w,
+/static/b836ac03cdbf65a8e46980b04a37049f/ee0d2/1590078824322.jpg 2214w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>现在试试访问 <a href="http://localhost:1337/projects">http://localhost:1337/projects</a></p>
+<p>hmm…报错了，403 Forbidden，无权访问接口。</p>
+<p>其实这是 Strapi 内建的 permission 系统，所有的接口是默认默认不开放给 public 的，要修改这个配置也很简单。去到 User - permission 页面，user 被默认分为两个角色，public 和 authenticated，这里我们暂时不接入用户系统，所以把 public 里面的接口权限开放即可。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/2154bbdcd85501e54aa0033f0f7abc56/69019/1590079088648.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 38.513513513513516%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAIABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAABm+AH/8QAFhAAAwAAAAAAAAAAAAAAAAAABRAy/9oACAEBAAEFAh9r/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFhAAAwAAAAAAAAAAAAAAAAAAAhBx/9oACAEBAAY/Ajj/AP/EABkQAAIDAQAAAAAAAAAAAAAAAAAhATGBsf/aAAgBAQABPyGF7Tppp//aAAwDAQACAAMAAAAQCA//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAWEQADAAAAAAAAAAAAAAAAAAABEDH/2gAIAQIBAT8QNX//xAAaEAEAAQUAAAAAAAAAAAAAAAABABEhMUGR/9oACAEBAAE/EAQAJmgZSztyf//Z'); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi user permission settings"
+        title="Strapi user permission settings"
+        src="/static/2154bbdcd85501e54aa0033f0f7abc56/1c72d/1590079088648.jpg"
+        srcset="/static/2154bbdcd85501e54aa0033f0f7abc56/a80bd/1590079088648.jpg 148w,
+/static/2154bbdcd85501e54aa0033f0f7abc56/1c91a/1590079088648.jpg 295w,
+/static/2154bbdcd85501e54aa0033f0f7abc56/1c72d/1590079088648.jpg 590w,
+/static/2154bbdcd85501e54aa0033f0f7abc56/a8a14/1590079088648.jpg 885w,
+/static/2154bbdcd85501e54aa0033f0f7abc56/fbd2c/1590079088648.jpg 1180w,
+/static/2154bbdcd85501e54aa0033f0f7abc56/69019/1590079088648.jpg 1844w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>勾选上 releaselog 和 project 下面的<code class="language-text">count</code>, <code class="language-text">find</code>, <code class="language-text">findone</code>的权限。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c232520498ef946112578dd2a549ec43/d14c1/1590079330782.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 74.32432432432432%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB3qhQf//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEAAQUCX//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABgQAAMBAQAAAAAAAAAAAAAAAAEQQQAh/9oACAEBAAE/IaeMaL//2gAMAwEAAgADAAAAEFMP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPxA//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPxA//8QAHBAAAgMAAwEAAAAAAAAAAAAAAAERITFBUWFx/9oACAEBAAE/EElJRvWnoiuzl9J9kXiP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi permission settings on api endpoint"
+        title="Strapi permission settings on api endpoint"
+        src="/static/c232520498ef946112578dd2a549ec43/1c72d/1590079330782.jpg"
+        srcset="/static/c232520498ef946112578dd2a549ec43/a80bd/1590079330782.jpg 148w,
+/static/c232520498ef946112578dd2a549ec43/1c91a/1590079330782.jpg 295w,
+/static/c232520498ef946112578dd2a549ec43/1c72d/1590079330782.jpg 590w,
+/static/c232520498ef946112578dd2a549ec43/a8a14/1590079330782.jpg 885w,
+/static/c232520498ef946112578dd2a549ec43/fbd2c/1590079330782.jpg 1180w,
+/static/c232520498ef946112578dd2a549ec43/d14c1/1590079330782.jpg 1234w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>刷新 /projects，数据就可以正确显示出来了。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/c5e5b1cd0d051a505dc5d4495db56ae0/1250c/1590079258848.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 141.89189189189187%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAcABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAEEAgX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAH0G2mJuHNUoP/EABkQAAIDAQAAAAAAAAAAAAAAAAADARAUIP/aAAgBAQABBQLKoyJMaSbnr//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQMBAT8BH//EABQRAQAAAAAAAAAAAAAAAAAAACD/2gAIAQIBAT8BH//EABoQAAICAwAAAAAAAAAAAAAAAAABMDIxkaH/2gAIAQEABj8Cw9lWV7F//8QAGxAAAwACAwAAAAAAAAAAAAAAAAERECFBYdH/2gAIAQEAAT8haXCU9DsDhDeIemTEVpFj/9oADAMBAAIAAwAAABBwygD/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/EB//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/EB//xAAeEAEAAgICAwEAAAAAAAAAAAABABEQMSGRQXGh8f/aAAgBAQABPxAb4V7zS+mfqoV5Kbns94CiVXMBd2dGFrDnUA0Y/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi rest api response"
+        title="Strapi rest api response"
+        src="/static/c5e5b1cd0d051a505dc5d4495db56ae0/1c72d/1590079258848.jpg"
+        srcset="/static/c5e5b1cd0d051a505dc5d4495db56ae0/a80bd/1590079258848.jpg 148w,
+/static/c5e5b1cd0d051a505dc5d4495db56ae0/1c91a/1590079258848.jpg 295w,
+/static/c5e5b1cd0d051a505dc5d4495db56ae0/1c72d/1590079258848.jpg 590w,
+/static/c5e5b1cd0d051a505dc5d4495db56ae0/a8a14/1590079258848.jpg 885w,
+/static/c5e5b1cd0d051a505dc5d4495db56ae0/1250c/1590079258848.jpg 1178w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>这里也默认包含了 project 的「引用类型」releaselog 在 json 中，相同地，查询 releaselog 时，project 也会被查询出来，而且自带的 ORM 对查询做了优化，不会导致 N+1 的性能问题。</p>
+<h2>Swagger Doc</h2>
+<p>除了 API 接口是自动生成的，就连 swagger 文档都生成好了。在后台找到 marketplace（市场） 页面，安装 documentation 插件（顺便也可以把 GraphQL 的插件也安装了，后面会讲到）。</p>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; "
+    >
+      <a
+    class="gatsby-resp-image-link"
+    href="/static/831b458ed96ee98d9330a98efd4e00eb/4658e/1590079563520.jpg"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+    <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 64.1891891891892%; position: relative; bottom: 0; left: 0; background-image: url('data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAgABBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHurCjhH//EABYQAQEBAAAAAAAAAAAAAAAAABECIP/aAAgBAQABBQLFJKf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAADAQEAAAAAAAAAAAAAAAAAAREhIP/aAAgBAQAGPwLjHDXT/8QAHRAAAgIBBQAAAAAAAAAAAAAAAAERUXEQITFhkf/aAAgBAQABPyFp9+ixpvZLzlxJYmIP/9oADAMBAAIAAwAAABCP/wD/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QWHb/xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQIBAT8QDWTG/8QAHhABAAIBBAMAAAAAAAAAAAAAAQARMSFBUYFxkbH/2gAIAQEAAT8QsKesJ3p3GPCnUsAbTV8ITULMmDxP/9k='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="Strapi marketplace documentation"
+        title="Strapi marketplace documentation"
+        src="/static/831b458ed96ee98d9330a98efd4e00eb/1c72d/1590079563520.jpg"
+        srcset="/static/831b458ed96ee98d9330a98efd4e00eb/a80bd/1590079563520.jpg 148w,
+/static/831b458ed96ee98d9330a98efd4e00eb/1c91a/1590079563520.jpg 295w,
+/static/831b458ed96ee98d9330a98efd4e00eb/1c72d/1590079563520.jpg 590w,
+/static/831b458ed96ee98d9330a98efd4e00eb/4658e/1590079563520.jpg 722w"
+        sizes="(max-width: 590px) 100vw, 590px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+  </a>
+    </span></p>
+<p>等待安装重启后，导航栏多了一个 doc 页面，点击 open doc 或者访问 <a href="http://localhost:1337/documentation/v1.0.0">http://localhost:1337/documentation/v1.0.0</a> 就可以看到文档了。</p>
+<p>下一章接着介绍自动生成的 GraphQL API 部分。</p></section><hr style="margin-bottom:1.75rem"/><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAMFAv/EABYBAQEBAAAAAAAAAAAAAAAAAAIBA//aAAwDAQACEAMQAAABpzzIrRRU5sy3SGT/AP/EABsQAQEBAAIDAAAAAAAAAAAAAAECAAMRBBMU/9oACAEBAAEFAvIso4F79nWuZjFyX9HE61yqTEyf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAHRAAAgEEAwAAAAAAAAAAAAAAAAEhAhESQRAxsf/aAAgBAQAGPwLFOSZJdhZbQnTrsnwsJcf/xAAcEAEAAgMBAQEAAAAAAAAAAAABABEhMUGRUYH/2gAIAQEAAT8h6VNwTMlYqJVAvjLSFOD2Hkh7TeD+xWLNGornAykB7P/aAAwDAQACAAMAAAAQu/d//8QAGREBAAIDAAAAAAAAAAAAAAAAAQAhEBEx/9oACAEDAQE/EKCsHJon/8QAGBEAAwEBAAAAAAAAAAAAAAAAAAERIUH/2gAIAQIBAT8Q1vSD4Vn/xAAdEAEAAgICAwAAAAAAAAAAAAABABEhQTFRcbHR/9oACAEBAAE/EBKABC0eI1Jl7HvE7kqoMDvROUNs9RRvZLdPs3Q4M7UaprkOrnCmgHuUnpzYFZ//2Q==" alt="Renyuan" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/404c443f3ebef2715457b93974933948/99438/profile-pic.jpg 1x,
+/static/404c443f3ebef2715457b93974933948/aba1d/profile-pic.jpg 1.5x,
+/static/404c443f3ebef2715457b93974933948/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/404c443f3ebef2715457b93974933948/99438/profile-pic.jpg 1x,
+/static/404c443f3ebef2715457b93974933948/aba1d/profile-pic.jpg 1.5x,
+/static/404c443f3ebef2715457b93974933948/b315d/profile-pic.jpg 2x" src="/static/404c443f3ebef2715457b93974933948/99438/profile-pic.jpg" alt="Renyuan" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div><p>Written by <strong>Renyuan</strong> <!-- -->who is a developer.<!-- --> <a href="https://twitter.com/ry_zou">You should follow him on Twitter</a></p></div></footer></article><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li></li><li><a rel="next" href="/build-a-release-system-with-strapi-and-graphql-part-2/">使用 Strapi 和 GraphQL 快速搭建公司发布变更系统 —— Part.2 GraphQL API<!-- --> →</a></li></ul></nav></main><footer>© <!-- -->2022<!-- -->, Built with<!-- --> <a href="https://www.gatsbyjs.org">Gatsby</a></footer></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script>
+  
+  
+  if(true) {
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  }
+  if (typeof ga === "function") {
+    ga('create', 'UA-62251910-1', 'auto', {});
+      
+      
+      
+      
+      
+      }</script><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/build-a-release-system-with-strapi-and-graphql-part-1/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-de6f229c0a3977155403.js"],"app":["/app-1fc3f10b0540ead08994.js"],"component---src-pages-404-js":["/component---src-pages-404-js-23ca5cbca0a04c68366d.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-efc44ebadeb4d521316d.js"],"component---src-templates-blog-post-js":["/component---src-templates-blog-post-js-192916fa5b4b2dea4922.js"]};/*]]>*/</script><script src="/polyfill-de6f229c0a3977155403.js" nomodule=""></script><script src="/component---src-templates-blog-post-js-192916fa5b4b2dea4922.js" async=""></script><script src="/fab8c9364b01cebfd3503fc18011994750f493ff-a873b42b1724b534983b.js" async=""></script><script src="/commons-afc5141f5e3bb79125a1.js" async=""></script><script src="/app-1fc3f10b0540ead08994.js" async=""></script><script src="/framework-576a35283827f43a776d.js" async=""></script><script src="/webpack-runtime-5be1ea5d33c995e82571.js" async=""></script></body></html>
